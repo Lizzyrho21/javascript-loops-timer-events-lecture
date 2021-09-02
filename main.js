@@ -18,7 +18,7 @@ let name_array = []; // empty array
 let userQuestions = true; // starts as true because the user is asking questions 
 let quit = 'Q'.toLowerCase(); // set a variable to equal 'q' or 'Q' for use to press to quit.
 
-while(userQuestions == true) //while loop keeps running while true
+while(userQuestions) //while loop keeps running while true
 {
 let askUser = prompt("Enter a word or press q to quit"); // Ask user to enter a word or press q to quit.
 name_array.push(askUser); // push whatever they enter into the array
@@ -43,7 +43,18 @@ console.log(name_array); // store the entires in the console.log!!
 //example of a for loop
 //here is the condition!
 // 1. the index starts at 0, if the index is less than the set number, the index will keep counting up from 0 (0, 1, 2, 3,...9)
-for(let index = 0; index < 10; index++)
-{
-    // console.log(` current iteration is ${index}`);
-}
+// for(let index = 0; index < 10; index++)
+// {
+//     // console.log(` current iteration is ${index}`);
+// }
+
+// let whileNotEddie = true; // flag or boolean.
+// //keep asking the user for a cool name until they enter Eddie
+// while(whileNotEddie){
+
+//     let coolName = prompt("Enter a cool name!");
+//     // did they enter eddie?
+//     if(coolName === "Eddie") {
+//         whileNotEddie === false;
+//     }
+// }
